@@ -7,11 +7,11 @@ li {
     border: 2px double black;
 }
 
-li:hover {
+#normal {
     display: block;
     margin: 5px;
     padding: 10px 20px 10px 20px;
-
-    list-style-type: "\F44D";
-    border: 2px double black;
+    
+    list-style-type: disc;
+    border: none;
 }

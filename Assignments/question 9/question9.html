@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #scrollingText {
+            display: none;
+            position: relative;
+            /* animation-name: scrollingText; */
+            /* animation-duration: 15s; */
+            /* animation-delay: 2s; */
+            animation: scrollingText 15s linear infinite;
+            animation-iteration-count: infinite;
+        }
+        @keyframes scrollingText {
+            0% {transform: translateX(-100%);}
+            100% {transform: translateX(100%);}
+        }
+    </style>
+</head>
+<body>
+    <button onClick="startScrolling()">Start Scrolling</button>
+    <div id="scrollingText">This is some scrolling text</div>
+    <script>
+        function startScrolling() {
+         document.getElementById("scrollingText").style.display= "block";
+        }
+    </script>
+</body>
+</html>

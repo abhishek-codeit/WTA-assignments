@@ -9,17 +9,25 @@
             border: 1px solid black;
             border-collapse: collapse;
         }
+        [rowspan="10"] {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            width: 200px;
+            text-align: center;
+        }
         td {
             border: 1px solid black;
             border-collapse: collapse;
             padding: 5px;
+            width: 200px;
         }
         [rowspan="10"] {
             background-color: rgb(151, 221, 247);
             padding: 20px;
         }
         [rowspan="3"] {
-            background-color: rgb(151, 247, 151);
+            background-color: rgb(191, 168, 246);
             padding: 20px;
             width: 100px;
             text-align: center;
@@ -32,24 +40,24 @@
 <body>
     <table>
         <tr>
-            <td rowspan="10">Department</tr>
-            <td rowspan="3">sem 1</td>
-            <td>Subject A</td>
+            <td rowspan="10"><strong>Department</strong></tr>
+            <td rowspan="3"><strong>sem 1</strong></td>
+            <td><em>Subject A</em></td>
         </tr>
-        <tr><td>Subject B</td></tr>
-        <tr><td>Subject C</td></tr>
+        <tr><td><em>Subject B</em></td></tr>
+        <tr><td><em>Subject C</em></td></tr>
         <tr>
-            <td rowspan="3">Sem 2</td>
-            <td>Subject E</td>
+            <td rowspan="3"><strong>Sem 2</strong></td>
+            <td><em>Subject E</em></td>
         </tr>
-        <tr><td>Subject F</td></tr>
-        <tr><td>Subject G</td></tr>
+        <tr><td><em>Subject F</em></td></tr>
+        <tr><td><em>Subject G</em></td></tr>
         <tr>
-            <td rowspan="3">Sem 3</td>
-            <td>Subject H</td>
+            <td rowspan="3"><strong>Sem 3</strong></td>
+            <td><em>Subject H</em></td>
         </tr>
-        <tr><td>Subject I</td></tr>
-        <tr><td>Subject J</td></tr>
+        <tr><td><em>Subject I</em></td></tr>
+        <tr><td><em>Subject J</em></td></tr>
     </table>
 </body>
 </html>

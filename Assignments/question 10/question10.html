@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       img {
+            width: 20%;
+        }
+        .big-image {
+            position: absolute;
+            top: 5%;
+            left: 10%;
+            width: 80%;
+            height: 60%;
+            display: none;
+        }
+        .container{
+            position: fixed;
+            bottom: 5%;
+            left: 30%;
+        } 
+    </style>
+    <script type="text/javascript">
+        function showBig(i) {
+        var image = document.getElementById(`big-image-${i}`);
+        image.style.display = "block";
+        }
+        function hideBig(i) {
+        var image = document.getElementById(`big-image-${i}`);
+        image.style.display = "none";
+        }
+        </script>
+</head>
+<body>
+    <div >
+        <img id="big-image-1" class="big-image" src="image1.jpg" alt="bigimage 1">
+        <img id="big-image-2" class="big-image" src="image2.jpg" alt="bigimage 2">
+        <img id="big-image-3" class="big-image" src="image3.jpg" alt="bigimage 3">
+    </div>
+        <div class="container">
+        <img class="overlap1" src="image1.jpg" alt="image 1" onmouseover="showBig(1)" onmouseout="hideBig(1)">
+<img class="overlap2" src="image2.jpg" alt="image 2" onmouseover="showBig(2)" onmouseout="hideBig(2)">
+<img class="overlap3" src="image3.jpg" alt="image 3" onmouseover="showBig(3)" onmouseout="hideBig(3)">
+</div>
+    
+</body>
+</html>
